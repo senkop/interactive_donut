@@ -48,8 +48,7 @@ void main() {
     // size 200, expansion 6 -> outer radius 94, inner radius 70.
     final center = tester.getCenter(find.byType(DonutChart));
     const angle = -math.pi / 2 + 0.6; // just right of 12 o'clock -> segment 0
-    final onFirst =
-        center + Offset(82 * math.cos(angle), 82 * math.sin(angle));
+    final onFirst = center + Offset(82 * math.cos(angle), 82 * math.sin(angle));
 
     await tester.tapAt(onFirst);
     await tester.pump();

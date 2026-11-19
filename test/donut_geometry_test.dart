@@ -64,7 +64,8 @@ void main() {
 
     test('finds the segment under a point on the ring', () {
       expect(
-        hitTestDonut(position: at(-math.pi / 4, 90), layout: layout, arcs: arcs),
+        hitTestDonut(
+            position: at(-math.pi / 4, 90), layout: layout, arcs: arcs),
         0,
       );
       expect(

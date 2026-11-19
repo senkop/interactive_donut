@@ -1,5 +1,5 @@
 name: interactive_donut
-description: An animated, interactive donut chart for Flutter with hover and tap selection, center content, gaps, rounded ends and a legend. No dependencies.
+description: "An animated, interactive donut chart for Flutter with hover and tap selection, center content, gaps, rounded ends and a legend. No dependencies."
 version: 0.1.0
 homepage: https://github.com/senkop/interactive_donut
 repository: https://github.com/senkop/interactive_donut
