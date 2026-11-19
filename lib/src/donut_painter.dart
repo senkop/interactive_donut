@@ -87,10 +87,25 @@ class DonutPainter extends CustomPainter {
         ..strokeCap = roundedEnds ? StrokeCap.round : StrokeCap.butt
         ..color = segments[i].color;
 
+      var drawStart = arc.start;
+      var drawSweep = sweep;
+      if (roundedEnds) {
+        // Round caps stick out by half the stroke width at each end, so
+        // pull the arc in to keep the caps inside the segment's own range.
+        final cap = (width / 2) / radius;
+        if (drawSweep > 2 * cap) {
+          drawStart += cap;
+          drawSweep -= 2 * cap;
+        } else {
+          drawStart += drawSweep / 2;
+          drawSweep = 0.0001;
+        }
+      }
+
       canvas.drawArc(
         Rect.fromCircle(center: center, radius: radius),
-        arc.start,
-        sweep,
+        drawStart,
+        drawSweep,
         false,
         paint,
       );

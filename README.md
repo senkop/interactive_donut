@@ -14,8 +14,7 @@ An animated, interactive donut chart for Flutter. It has **no dependencies** and
 - Screen-reader label generated from your data
 - Pure, tested geometry helpers if you want to build your own chart
 
-<!-- Add a screenshot or GIF of the example app here, e.g.
-![demo](https://raw.githubusercontent.com/senkop/interactive_donut/main/doc/demo.gif) -->
+![interactive_donut preview](https://raw.githubusercontent.com/senkop/interactive_donut/main/doc/preview.svg)
 
 ## Install
 
